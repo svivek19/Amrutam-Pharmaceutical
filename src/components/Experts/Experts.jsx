@@ -1,6 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import doc from "../../assets/doc.png";
+import degree from "../../assets/degree.png";
+import plast from "../../assets/plast.png";
 
 const Experts = () => {
   const settings = {
@@ -29,55 +32,39 @@ const Experts = () => {
       </div>
       <div className="slider-container mt-10 w-5/6 mx-auto">
         <Slider {...settings} className="">
-          {demo.map((item) => (
-            <div className="flex items-center h-screen w-full justify-between">
+          {demo.map((item, i) => (
+            <div
+              className="flex  items-center h-screen w-full justify-between"
+              key={i}
+            >
               <div className="max-w-xs">
-                <div className="bg-white shadow-xl rounded-lg py-3">
+                <div className="bg-[#FFF7E2] shadow-xl rounded-b-3xl rounded-lg pt-3">
                   <div className="photo-wrapper p-2">
                     <img
                       className="w-32 h-32 rounded-full mx-auto"
-                      src="https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp"
-                      alt="John Doe"
+                      src={doc}
+                      alt={item.name}
                     />
                   </div>
                   <div className="p-2">
                     <h3 className="text-center text-xl text-gray-900 font-medium leading-8">
-                      John Doe
+                      {item.name}
                     </h3>
                     <div className="text-center text-gray-400 text-xs font-semibold">
-                      <p>Web Developer</p>
+                      <p>{item.position}</p>
                     </div>
-                    <table className="text-xs my-3">
-                      <tbody>
-                        <tr>
-                          <td className="px-2 py-2 text-gray-500 font-semibold">
-                            Address
-                          </td>
-                          <td className="px-2 py-2">
-                            Chatakpur-3, Dhangadhi Kailali
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="px-2 py-2 text-gray-500 font-semibold">
-                            Phone
-                          </td>
-                          <td className="px-2 py-2">+977 9955221114</td>
-                        </tr>
-                        <tr>
-                          <td className="px-2 py-2 text-gray-500 font-semibold">
-                            Email
-                          </td>
-                          <td className="px-2 py-2">john@example.com</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div className="text-center my-3">
-                      <a
-                        className="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-                        href="#"
-                      >
-                        View Profile
-                      </a>
+
+                    <div className="text-[#0C0C0C] flex justify-center items-center space-x-1 text-center text-xs my-2">
+                      <img src={degree} width={20} />
+                      <p>{item.exp}</p>
+                    </div>
+
+                    <div className="w-1/2 mx-auto bg-[#b0d3b0] text-green-900 p-1 rounded-full flex justify-center items-center space-x-1 text-center text-xs my-2">
+                      <img src={plast} width={20} />
+                      <p>{item.specialist}</p>
+                    </div>
+                    <div className="text-center mt-4 mb-0 bg-[#3A643B] p-2 rounded-b-3xl text-white">
+                      <h1>Book a session</h1>
                     </div>
                   </div>
                 </div>
@@ -94,23 +81,27 @@ export default Experts;
 
 const demo = [
   {
-    id: 1,
-    name: "Make Appointment",
-    text: "You must make an appointment in advance, to choose the service and date.",
+    name: "Dr. Vaishali sharma",
+    position: "Ayurveda Practitioner (BAMS, MD)",
+    exp: "25 years of experience",
+    specialist: "Skin Specialist",
   },
   {
-    id: 2,
-    name: "Consultations",
-    text: "The next stage involves a thorough consultation with an Ayurveda practitioner.",
+    name: "Dr. Vaishali sharma",
+    position: "Ayurveda Practitioner (BAMS, MD)",
+    exp: "25 years of experience",
+    specialist: "Skin Specialist",
   },
   {
-    id: 3,
-    name: "Treatment Planning",
-    text: "The Ayurvedic practitioner creates a personalized treatment plan for you",
+    name: "Dr. Vaishali sharma",
+    position: "Ayurveda Practitioner (BAMS, MD)",
+    exp: "25 years of experience",
+    specialist: "Skin Specialist",
   },
   {
-    id: 4,
-    name: "Maintenance",
-    text: "These visits allow for assessment of progress, adjustments to the treatment.",
+    name: "Dr. Vaishali sharma",
+    position: "Ayurveda Practitioner (BAMS, MD)",
+    exp: "25 years of experience",
+    specialist: "Skin Specialist",
   },
 ];
