@@ -97,7 +97,9 @@ const Banner = () => {
             <img className="w-10" src={shield} alt="" />
           </div>
 
-          <h3 className="text-[#3A643B]">Safe and effective treatment</h3>
+          <h3 className="text-[#3A643B]">
+            Safe and effective treatment Ayurvedic
+          </h3>
         </div>
         <div className="flex items-center justify-center gap-2">
           <div className="bg-white rounded-full border border-[#3A643B] p-3">
