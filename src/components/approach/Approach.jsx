@@ -23,7 +23,7 @@ const Approach = () => {
   return (
     <div className="py-16 bg-white mx-1">
       <div className="flex flex-col items-center space-y-5 px-1">
-        <h1 className="text-[#3A643B] text-center font-bold text-xl md:text-3xl border-b-4 max-w-[536px] border-[#C3D0C4]">
+        <h1 className="text-[#3A643B] capitalize text-center font-bold text-xl md:text-3xl border-b-4 max-w-[536px] border-[#C3D0C4]">
           Our ayurvedic approach
         </h1>
         <p className="text-[#666666] text-center max-w-[536px]">
