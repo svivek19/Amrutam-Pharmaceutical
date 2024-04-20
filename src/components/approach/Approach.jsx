@@ -33,7 +33,7 @@ const Approach = () => {
           current health conditions.
         </p>
       </div>
-      <div className="slider-container mt-10 ">
+      <div className="slider-container mt-10 w-11/12 mx-auto">
         <Slider {...settings} className="">
           {demo.map((item) => (
             <div
