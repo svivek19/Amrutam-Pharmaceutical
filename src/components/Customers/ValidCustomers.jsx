@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick/lib/slider";
+import empty from "../../assets/empty.png";
 
 const ValidCustomers = () => {
   const settings = {
@@ -41,7 +42,7 @@ const ValidCustomers = () => {
                       <div className="relative inline-block overflow-hidden rounded-lg border-neutral-800">
                         <img
                           alt={user.name}
-                          src={user.img}
+                          src={empty}
                           width="80"
                           height="80"
                           decoding="async"
@@ -121,7 +122,6 @@ const users = [
     place: "Chennai",
     date: "17/02/24",
     quates: "One of a kind service",
-    img: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
     para: "Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra diam sit amet nisl suscipit adipis.",
   },
   {
@@ -129,7 +129,6 @@ const users = [
     name: "Sophie Moore  ",
     place: "Chennai",
     date: "17/02/24",
-    img: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
     quates: "One of a kind service",
     para: "Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra diam sit amet nisl suscipit adipis.",
   },
@@ -138,7 +137,6 @@ const users = [
     name: "Sophie Moore  ",
     place: "Chennai",
     date: "17/02/24",
-    img: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
     quates: "One of a kind service",
     para: "Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra diam sit amet nisl suscipit adipis.",
   },
@@ -147,7 +145,6 @@ const users = [
     name: "Sophie Moore",
     place: "Chennai",
     date: "17/02/24",
-    img: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
     quates: "One of a kind service",
     para: "Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra diam sit amet nisl suscipit adipis.",
   },
